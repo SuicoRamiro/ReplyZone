@@ -13,7 +13,7 @@ class SplashViewController: UIViewController {
 
     func showLoginScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") // Asegúrate que el Storyboard ID de tu pantalla de login sea correcto
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") 
         loginVC.modalPresentationStyle = .fullScreen
         self.present(loginVC, animated: true, completion: nil)
     }

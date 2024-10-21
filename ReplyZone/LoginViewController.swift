@@ -1,29 +1,44 @@
-//
-//  LoginViewController.swift
-//  ReplyZone
-//
-//  Created by Ramiro on 21/10/24.
-//
-
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var TextFieldCorreo: UITextField!
+    @IBOutlet weak var TextFieldContraseña: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Establecer el color del texto
+        TextFieldCorreo.textColor = .white // O el color que prefieras
+        
+        // Cambiar el color del placeholder
+        let placeholderTextCorreo = "Ingrese su correo electronico"
+        TextFieldCorreo.attributedPlaceholder = NSAttributedString(
+            string: placeholderTextCorreo,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+        )
+
+        // Configuración para el campo de contraseña
+        TextFieldContraseña.textColor = .white
+        
+        // Cambiar el color del placeholder
+        let placeholderTextContrasena = "Ingrese su contraseña"
+        TextFieldContraseña.attributedPlaceholder = NSAttributedString(
+            string: placeholderTextContrasena,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+        )
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func ButtonIniciarSesion(_ sender: Any) {
+        Auth.auth().signIn(withEmail: TextFieldCorreo.text!, password: TextFieldContraseña.text! ) { (user, error) in print("Intentando Iniciar Sesion")
+            if error != nil{
+                print("Se presento el siguiente error: \(error)")
+            }else{
+                print("Inicio de Sesion Exitoso")
+            }
+        }
     }
-    */
-
+    
 }
