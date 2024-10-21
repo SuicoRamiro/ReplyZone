@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2810CB7F2CC69EC1000EA927 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */; };
+		2810CB812CC69F22000EA927 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810CB802CC69F22000EA927 /* HomeViewController.swift */; };
+		2810CB832CC6A81F000EA927 /* LogoReplyZone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810CB822CC6A81F000EA927 /* LogoReplyZone.png */; };
 		284CCB932CC696B100272C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB922CC696B100272C2D /* AppDelegate.swift */; };
 		284CCB952CC696B100272C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB942CC696B100272C2D /* SceneDelegate.swift */; };
-		284CCB972CC696B100272C2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB962CC696B100272C2D /* ViewController.swift */; };
+		284CCB972CC696B100272C2D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB962CC696B100272C2D /* SplashViewController.swift */; };
 		284CCB9A2CC696B100272C2D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 284CCB992CC696B100272C2D /* Base */; };
 		284CCB9C2CC696B200272C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284CCB9B2CC696B200272C2D /* Assets.xcassets */; };
 		284CCB9F2CC696B200272C2D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 284CCB9E2CC696B200272C2D /* Base */; };
@@ -23,10 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2810CB802CC69F22000EA927 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2810CB822CC6A81F000EA927 /* LogoReplyZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoReplyZone.png; sourceTree = "<group>"; };
 		284CCB8F2CC696B100272C2D /* ReplyZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplyZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284CCB922CC696B100272C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284CCB942CC696B100272C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		284CCB962CC696B100272C2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		284CCB962CC696B100272C2D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		284CCB992CC696B100272C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		284CCB9B2CC696B200272C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284CCB9E2CC696B200272C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,10 +76,13 @@
 		284CCB912CC696B100272C2D /* ReplyZone */ = {
 			isa = PBXGroup;
 			children = (
+				2810CB822CC6A81F000EA927 /* LogoReplyZone.png */,
 				284CCB922CC696B100272C2D /* AppDelegate.swift */,
 				284CCB942CC696B100272C2D /* SceneDelegate.swift */,
-				284CCB962CC696B100272C2D /* ViewController.swift */,
+				284CCB962CC696B100272C2D /* SplashViewController.swift */,
 				284CCB982CC696B100272C2D /* Main.storyboard */,
+				2810CB802CC69F22000EA927 /* HomeViewController.swift */,
+				2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */,
 				284CCB9B2CC696B200272C2D /* Assets.xcassets */,
 				284CCB9D2CC696B200272C2D /* LaunchScreen.storyboard */,
 				284CCBA02CC696B200272C2D /* Info.plist */,
@@ -151,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2810CB832CC6A81F000EA927 /* LogoReplyZone.png in Resources */,
 				284CCB9C2CC696B200272C2D /* Assets.xcassets in Resources */,
 				284CCBA72CC6993700272C2D /* GoogleService-Info.plist in Resources */,
 				284CCB9F2CC696B200272C2D /* Base in Resources */,
@@ -165,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				284CCB972CC696B100272C2D /* ViewController.swift in Sources */,
+				2810CB812CC69F22000EA927 /* HomeViewController.swift in Sources */,
+				2810CB7F2CC69EC1000EA927 /* LoginViewController.swift in Sources */,
+				284CCB972CC696B100272C2D /* SplashViewController.swift in Sources */,
 				284CCB932CC696B100272C2D /* AppDelegate.swift in Sources */,
 				284CCB952CC696B100272C2D /* SceneDelegate.swift in Sources */,
 			);
