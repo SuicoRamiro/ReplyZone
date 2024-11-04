@@ -28,6 +28,8 @@
 		289910A22CC6E75B008BBFDD /* LogoReplyZone.png in Resources */ = {isa = PBXBuildFile; fileRef = 289910A12CC6E75B008BBFDD /* LogoReplyZone.png */; };
 		289910A52CC6F06D008BBFDD /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 289910A42CC6F06D008BBFDD /* GoogleSignIn */; };
 		289910A72CC6F06D008BBFDD /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 289910A62CC6F06D008BBFDD /* GoogleSignInSwift */; };
+		28A9B9772CD7543C00FD483A /* CrearPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */; };
+		28DBCF542CD8AFD500BE943C /* fondoPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DBCF532CD8AFD500BE943C /* fondoPerfil.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		284CCBA02CC696B200272C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2899109D2CC6CB44008BBFDD /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		289910A12CC6E75B008BBFDD /* LogoReplyZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoReplyZone.png; sourceTree = "<group>"; };
+		28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearPerfilViewController.swift; sourceTree = "<group>"; };
+		28DBCF532CD8AFD500BE943C /* fondoPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoPerfil.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,10 @@
 		284CCB912CC696B100272C2D /* ReplyZone */ = {
 			isa = PBXGroup;
 			children = (
+				28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */,
 				2810CB842CC6AE1B000EA927 /* fondo.png */,
 				289910A12CC6E75B008BBFDD /* LogoReplyZone.png */,
+				28DBCF532CD8AFD500BE943C /* fondoPerfil.png */,
 				280EEA542CC6FE34009A65B0 /* iconoGoogle.png */,
 				284CCB922CC696B100272C2D /* AppDelegate.swift */,
 				284CCB942CC696B100272C2D /* SceneDelegate.swift */,
@@ -178,6 +184,7 @@
 			files = (
 				2810CB852CC6AE1B000EA927 /* fondo.png in Resources */,
 				289910A22CC6E75B008BBFDD /* LogoReplyZone.png in Resources */,
+				28DBCF542CD8AFD500BE943C /* fondoPerfil.png in Resources */,
 				284CCB9C2CC696B200272C2D /* Assets.xcassets in Resources */,
 				284CCB9F2CC696B200272C2D /* Base in Resources */,
 				284CCB9A2CC696B100272C2D /* Base in Resources */,
@@ -198,6 +205,7 @@
 				2899109E2CC6CB44008BBFDD /* CreateViewController.swift in Sources */,
 				284CCB972CC696B100272C2D /* SplashViewController.swift in Sources */,
 				284CCB932CC696B100272C2D /* AppDelegate.swift in Sources */,
+				28A9B9772CD7543C00FD483A /* CrearPerfilViewController.swift in Sources */,
 				284CCB952CC696B100272C2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
