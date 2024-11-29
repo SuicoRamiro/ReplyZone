@@ -11,9 +11,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Configuración para Google Sign-In
         GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: FirebaseApp.app()?.options.clientID ?? "")
-        // Establecer el color del texto
+
+        // Establecer el color del texto de los TextFields
         TextFieldCorreo.textColor = .white
+        TextFieldContraseña.textColor = .white
         
         // Cambiar el color del placeholder
         let placeholderTextCorreo = "Ingrese su correo electronico"
@@ -22,10 +25,6 @@ class LoginViewController: UIViewController {
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
 
-        // Configuración para el campo de contraseña
-        TextFieldContraseña.textColor = .white
-        
-        // Cambiar el color del placeholder
         let placeholderTextContrasena = "Ingrese su contraseña"
         TextFieldContraseña.attributedPlaceholder = NSAttributedString(
             string: placeholderTextContrasena,
@@ -33,6 +32,7 @@ class LoginViewController: UIViewController {
         )
     }
     
+    // Función para el inicio de sesión con correo y contraseña
     @IBAction func ButtonIniciarSesion(_ sender: Any) {
         guard let email = TextFieldCorreo.text, let password = TextFieldContraseña.text else {
             mostrarAlerta(titulo: "Error", mensaje: "Por favor, ingrese su correo y contraseña.")
@@ -45,13 +45,14 @@ class LoginViewController: UIViewController {
                 self.mostrarAlerta(titulo: "Error", mensaje: "Error al iniciar sesión: La cuenta ingresada no existe")
                 print("Se presentó el siguiente error: \(error)")
             } else {
-                // Mensaje de inicio de sesión exitoso
-                self.mostrarAlerta(titulo: "Éxito", mensaje: "Inicio de sesión exitoso")
+                // Aquí navegamos al MainFeedViewController en caso de éxito
+                self.performSegue(withIdentifier: "showMainFeed", sender: nil)
                 print("Inicio de Sesión Exitoso")
             }
         }
     }
     
+    // Función para el inicio de sesión con Google
     @IBAction func ButtonGoogle(_ sender: Any) {
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
             if let error = error {
@@ -73,7 +74,8 @@ class LoginViewController: UIViewController {
                     self.mostrarAlerta(titulo: "Error", mensaje: "Error al autenticar con Firebase: \(error.localizedDescription)")
                     print("Error al autenticar con Firebase: \(error)")
                 } else {
-                    self.mostrarAlerta(titulo: "Éxito", mensaje: "Inicio de sesión exitoso con Google")
+                    // Aquí navegamos al MainFeedViewController en caso de éxito
+                    self.performSegue(withIdentifier: "showMainFeed", sender: nil)
                     print("Inicio de sesión exitoso con Google")
                 }
             }

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Nesecitamos permisos para acceder a tu album de fotos</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -9,8 +11,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.660455097138-nptjhvlguufm60con8kriahthpa6ba4j</string>
+				<string>com.googleusercontent.apps.516128531865-dqpqi8ojqgt37hhdeogbf127p1p2mi4m</string>
 			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
 		</dict>
 	</array>
 	<key>UIApplicationSceneManifest</key>

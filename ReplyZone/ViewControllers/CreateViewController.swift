@@ -52,7 +52,7 @@ class CreateViewController: UIViewController {
             
             // Almacenar el correo para pasar al siguiente ViewController
             self.correoParaPerfil = email
-            self.performSegue(withIdentifier: "crearPerfilSegue", sender: nil)
+            self.performSegue(withIdentifier: "verificarSegue", sender: nil)
         }
     }
     
@@ -68,30 +68,39 @@ class CreateViewController: UIViewController {
                 return
             }
             let accessToken = user.accessToken.tokenString
-
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-
-            Auth.auth().signIn(with: credential) { authResult, error in
-                if let error = error {
-                    self.mostrarAlerta(titulo: "Error", mensaje: "Error al autenticar en Firebase: \(error.localizedDescription)")
+            
+            // Obtener el correo del usuario autenticado
+            let correo = user.profile?.email
+            
+            // Verificar si el correo ya está registrado en Firebase
+            Database.database().reference().child("usuarios").queryOrdered(byChild: "correo").queryEqual(toValue: correo).observeSingleEvent(of: .value) { snapshot in
+                if snapshot.exists() {
+                    self.mostrarAlerta(titulo: "Error", mensaje: "La cuenta con este correo electrónico ya está en uso.")
                 } else {
-                    // Obtener el correo del usuario autenticado y asignarlo
-                    if let correo = Auth.auth().currentUser?.email {
-                        self.correoParaPerfil = correo
+                    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+                    
+                    Auth.auth().signIn(with: credential) { authResult, error in
+                        if let error = error {
+                            self.mostrarAlerta(titulo: "Error", mensaje: "Error al autenticar en Firebase: \(error.localizedDescription)")
+                        } else {
+                            // Almacenar el correo para pasar al siguiente ViewController
+                            self.correoParaPerfil = correo
+                            // Realizar el segue
+                            self.performSegue(withIdentifier: "verificarSegue", sender: nil)
+                        }
                     }
-                    // Realizar el segue
-                    self.performSegue(withIdentifier: "crearPerfilSegue", sender: nil)
                 }
             }
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "crearPerfilSegue" {
-            let destinoVC = segue.destination as! CrearPerfilViewController
-            destinoVC.correo = correoParaPerfil
+        if segue.identifier == "verificarSegue" {
+            let destinoVC = segue.destination as! VerificarIdentificacionViewController
+            destinoVC.correo = correoParaPerfil // Pasar el correo al siguiente ViewController
         }
     }
+
     
     func mostrarAlerta(titulo: String, mensaje: String) {
         let alerta = UIAlertController(title: titulo, message: mensaje, preferredStyle: .alert)

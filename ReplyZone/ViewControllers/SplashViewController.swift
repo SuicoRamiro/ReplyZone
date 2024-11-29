@@ -7,7 +7,7 @@ class SplashViewController: UIViewController {
         
         // Spash de 2 segundos
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.showLoginScreen() // Ahora simplemente irá a la pantalla de Login
+            self.showLoginScreen()
         }
     }
 

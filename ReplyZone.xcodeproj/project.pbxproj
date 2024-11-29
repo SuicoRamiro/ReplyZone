@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		280EEA512CC6F296009A65B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 280EEA502CC6F296009A65B0 /* GoogleService-Info.plist */; };
 		280EEA552CC6FE34009A65B0 /* iconoGoogle.png in Resources */ = {isa = PBXBuildFile; fileRef = 280EEA542CC6FE34009A65B0 /* iconoGoogle.png */; };
 		2810CB7F2CC69EC1000EA927 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */; };
-		2810CB812CC69F22000EA927 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810CB802CC69F22000EA927 /* HomeViewController.swift */; };
 		2810CB852CC6AE1B000EA927 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810CB842CC6AE1B000EA927 /* fondo.png */; };
+		282596292CF4D182008C056F /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282596282CF4D182008C056F /* PaddedLabel.swift */; };
+		2825FE742CDA7A8B008E9888 /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825FE732CDA7A8B008E9888 /* MainFeedViewController.swift */; };
+		282CFFD72CDEF66E005DE109 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CFFD62CDEF66E005DE109 /* Post.swift */; };
+		282CFFD92CDEF808005DE109 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CFFD82CDEF808005DE109 /* PostCell.swift */; };
+		282CFFDB2CDF1A8D005DE109 /* CrearPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CFFDA2CDF1A8D005DE109 /* CrearPostViewController.swift */; };
+		283353372CE3447000E1C167 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 283353362CE3447000E1C167 /* SDWebImage */; };
+		283353392CE3447000E1C167 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 283353382CE3447000E1C167 /* SDWebImageMapKit */; };
+		283A72492CD8C96A00F74BD9 /* fondoTrabajador.png in Resources */ = {isa = PBXBuildFile; fileRef = 283A72472CD8C96A00F74BD9 /* fondoTrabajador.png */; };
+		283A724B2CD8CD7600F74BD9 /* fondoCliente.png in Resources */ = {isa = PBXBuildFile; fileRef = 283A724A2CD8CD7600F74BD9 /* fondoCliente.png */; };
 		284CCB932CC696B100272C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB922CC696B100272C2D /* AppDelegate.swift */; };
 		284CCB952CC696B100272C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB942CC696B100272C2D /* SceneDelegate.swift */; };
 		284CCB972CC696B100272C2D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284CCB962CC696B100272C2D /* SplashViewController.swift */; };
@@ -24,20 +31,35 @@
 		284CCBB02CC69A4C00272C2D /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 284CCBAF2CC69A4C00272C2D /* FirebaseCore */; };
 		284CCBB22CC69A4C00272C2D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 284CCBB12CC69A4C00272C2D /* FirebaseDatabase */; };
 		284CCBB42CC69A4C00272C2D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 284CCBB32CC69A4C00272C2D /* FirebaseStorage */; };
+		2855D43E2CD9476F0048204A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855D43D2CD9476F0048204A /* User.swift */; };
+		286F5DE32CF822AC00BF8C51 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F5DE22CF822AC00BF8C51 /* Persona.swift */; };
+		286F5DE52CF8484200BF8C51 /* VerificarIdentificacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F5DE42CF8484200BF8C51 /* VerificarIdentificacionViewController.swift */; };
+		288260842CF323B000A790E8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288260832CF323B000A790E8 /* MessageCell.swift */; };
+		288269CF2CE6B6B400576DBE /* ListaChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288269CE2CE6B6B400576DBE /* ListaChatsViewController.swift */; };
 		2899109E2CC6CB44008BBFDD /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899109D2CC6CB44008BBFDD /* CreateViewController.swift */; };
 		289910A22CC6E75B008BBFDD /* LogoReplyZone.png in Resources */ = {isa = PBXBuildFile; fileRef = 289910A12CC6E75B008BBFDD /* LogoReplyZone.png */; };
 		289910A52CC6F06D008BBFDD /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 289910A42CC6F06D008BBFDD /* GoogleSignIn */; };
 		289910A72CC6F06D008BBFDD /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 289910A62CC6F06D008BBFDD /* GoogleSignInSwift */; };
 		28A9B9772CD7543C00FD483A /* CrearPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */; };
+		28A9DDC12CE1B6C600DA22E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A9DDC02CE1B6C600DA22E0 /* GoogleService-Info.plist */; };
+		28C7B6522CE5C38900091880 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6512CE5C38900091880 /* ChatViewController.swift */; };
+		28C7B6542CE5C42B00091880 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6532CE5C42B00091880 /* ChatMessageCell.swift */; };
+		28C7B6562CE5CAFB00091880 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6552CE5CAFB00091880 /* Message.swift */; };
+		28C7B6582CE5CB1400091880 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6572CE5CB1400091880 /* Chat.swift */; };
 		28DBCF542CD8AFD500BE943C /* fondoPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DBCF532CD8AFD500BE943C /* fondoPerfil.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		280EEA502CC6F296009A65B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		280EEA542CC6FE34009A65B0 /* iconoGoogle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconoGoogle.png; sourceTree = "<group>"; };
 		2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2810CB802CC69F22000EA927 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2810CB842CC6AE1B000EA927 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
+		282596282CF4D182008C056F /* PaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
+		2825FE732CDA7A8B008E9888 /* MainFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
+		282CFFD62CDEF66E005DE109 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		282CFFD82CDEF808005DE109 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		282CFFDA2CDF1A8D005DE109 /* CrearPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearPostViewController.swift; sourceTree = "<group>"; };
+		283A72472CD8C96A00F74BD9 /* fondoTrabajador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoTrabajador.png; sourceTree = "<group>"; };
+		283A724A2CD8CD7600F74BD9 /* fondoCliente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoCliente.png; sourceTree = "<group>"; };
 		284CCB8F2CC696B100272C2D /* ReplyZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplyZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284CCB922CC696B100272C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284CCB942CC696B100272C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +68,19 @@
 		284CCB9B2CC696B200272C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284CCB9E2CC696B200272C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284CCBA02CC696B200272C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2855D43D2CD9476F0048204A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		286F5DE22CF822AC00BF8C51 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		286F5DE42CF8484200BF8C51 /* VerificarIdentificacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificarIdentificacionViewController.swift; sourceTree = "<group>"; };
+		288260832CF323B000A790E8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		288269CE2CE6B6B400576DBE /* ListaChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaChatsViewController.swift; sourceTree = SOURCE_ROOT; };
 		2899109D2CC6CB44008BBFDD /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		289910A12CC6E75B008BBFDD /* LogoReplyZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoReplyZone.png; sourceTree = "<group>"; };
 		28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearPerfilViewController.swift; sourceTree = "<group>"; };
+		28A9DDC02CE1B6C600DA22E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28C7B6512CE5C38900091880 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = SOURCE_ROOT; };
+		28C7B6532CE5C42B00091880 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatMessageCell.swift; path = ReplyZone/ChatMessageCell.swift; sourceTree = SOURCE_ROOT; };
+		28C7B6552CE5CAFB00091880 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		28C7B6572CE5CB1400091880 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		28DBCF532CD8AFD500BE943C /* fondoPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoPerfil.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +95,8 @@
 				289910A72CC6F06D008BBFDD /* GoogleSignInSwift in Frameworks */,
 				284CCBB02CC69A4C00272C2D /* FirebaseCore in Frameworks */,
 				284CCBAC2CC69A4B00272C2D /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				283353392CE3447000E1C167 /* SDWebImageMapKit in Frameworks */,
+				283353372CE3447000E1C167 /* SDWebImage in Frameworks */,
 				284CCBB42CC69A4C00272C2D /* FirebaseStorage in Frameworks */,
 				289910A52CC6F06D008BBFDD /* GoogleSignIn in Frameworks */,
 			);
@@ -71,6 +105,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2825FE6E2CDA75BB008E9888 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				288269CE2CE6B6B400576DBE /* ListaChatsViewController.swift */,
+				28C7B6532CE5C42B00091880 /* ChatMessageCell.swift */,
+				28C7B6512CE5C38900091880 /* ChatViewController.swift */,
+				2825FE732CDA7A8B008E9888 /* MainFeedViewController.swift */,
+				2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */,
+				2899109D2CC6CB44008BBFDD /* CreateViewController.swift */,
+				284CCB962CC696B100272C2D /* SplashViewController.swift */,
+				28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */,
+				282CFFD82CDEF808005DE109 /* PostCell.swift */,
+				282CFFDA2CDF1A8D005DE109 /* CrearPostViewController.swift */,
+				288260832CF323B000A790E8 /* MessageCell.swift */,
+				286F5DE42CF8484200BF8C51 /* VerificarIdentificacionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2825FE6F2CDA75E2008E9888 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				2855D43D2CD9476F0048204A /* User.swift */,
+				282CFFD62CDEF66E005DE109 /* Post.swift */,
+				28C7B6552CE5CAFB00091880 /* Message.swift */,
+				28C7B6572CE5CB1400091880 /* Chat.swift */,
+				286F5DE22CF822AC00BF8C51 /* Persona.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		2825FE702CDA75F7008E9888 /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				283A724A2CD8CD7600F74BD9 /* fondoCliente.png */,
+				283A72472CD8C96A00F74BD9 /* fondoTrabajador.png */,
+				280EEA542CC6FE34009A65B0 /* iconoGoogle.png */,
+				28DBCF532CD8AFD500BE943C /* fondoPerfil.png */,
+				289910A12CC6E75B008BBFDD /* LogoReplyZone.png */,
+				2810CB842CC6AE1B000EA927 /* fondo.png */,
+			);
+			path = Imagenes;
+			sourceTree = "<group>";
+		};
 		284CCB862CC696B100272C2D = {
 			isa = PBXGroup;
 			children = (
@@ -90,22 +168,17 @@
 		284CCB912CC696B100272C2D /* ReplyZone */ = {
 			isa = PBXGroup;
 			children = (
-				28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */,
-				2810CB842CC6AE1B000EA927 /* fondo.png */,
-				289910A12CC6E75B008BBFDD /* LogoReplyZone.png */,
-				28DBCF532CD8AFD500BE943C /* fondoPerfil.png */,
-				280EEA542CC6FE34009A65B0 /* iconoGoogle.png */,
+				2825FE702CDA75F7008E9888 /* Imagenes */,
+				2825FE6F2CDA75E2008E9888 /* Modelos */,
+				2825FE6E2CDA75BB008E9888 /* ViewControllers */,
 				284CCB922CC696B100272C2D /* AppDelegate.swift */,
 				284CCB942CC696B100272C2D /* SceneDelegate.swift */,
-				284CCB962CC696B100272C2D /* SplashViewController.swift */,
 				284CCB982CC696B100272C2D /* Main.storyboard */,
-				2899109D2CC6CB44008BBFDD /* CreateViewController.swift */,
-				2810CB802CC69F22000EA927 /* HomeViewController.swift */,
-				2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */,
 				284CCB9B2CC696B200272C2D /* Assets.xcassets */,
 				284CCB9D2CC696B200272C2D /* LaunchScreen.storyboard */,
+				28A9DDC02CE1B6C600DA22E0 /* GoogleService-Info.plist */,
 				284CCBA02CC696B200272C2D /* Info.plist */,
-				280EEA502CC6F296009A65B0 /* GoogleService-Info.plist */,
+				282596282CF4D182008C056F /* PaddedLabel.swift */,
 			);
 			path = ReplyZone;
 			sourceTree = "<group>";
@@ -135,6 +208,8 @@
 				284CCBB32CC69A4C00272C2D /* FirebaseStorage */,
 				289910A42CC6F06D008BBFDD /* GoogleSignIn */,
 				289910A62CC6F06D008BBFDD /* GoogleSignInSwift */,
+				283353362CE3447000E1C167 /* SDWebImage */,
+				283353382CE3447000E1C167 /* SDWebImageMapKit */,
 			);
 			productName = ReplyZone;
 			productReference = 284CCB8F2CC696B100272C2D /* ReplyZone.app */;
@@ -167,6 +242,7 @@
 			packageReferences = (
 				284CCBA82CC69A4B00272C2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				289910A32CC6F06D008BBFDD /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				283353352CE3446F00E1C167 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 284CCB902CC696B100272C2D /* Products */;
 			projectDirPath = "";
@@ -183,13 +259,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2810CB852CC6AE1B000EA927 /* fondo.png in Resources */,
+				283A724B2CD8CD7600F74BD9 /* fondoCliente.png in Resources */,
 				289910A22CC6E75B008BBFDD /* LogoReplyZone.png in Resources */,
 				28DBCF542CD8AFD500BE943C /* fondoPerfil.png in Resources */,
 				284CCB9C2CC696B200272C2D /* Assets.xcassets in Resources */,
 				284CCB9F2CC696B200272C2D /* Base in Resources */,
 				284CCB9A2CC696B100272C2D /* Base in Resources */,
+				28A9DDC12CE1B6C600DA22E0 /* GoogleService-Info.plist in Resources */,
+				283A72492CD8C96A00F74BD9 /* fondoTrabajador.png in Resources */,
 				280EEA552CC6FE34009A65B0 /* iconoGoogle.png in Resources */,
-				280EEA512CC6F296009A65B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,13 +278,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2810CB812CC69F22000EA927 /* HomeViewController.swift in Sources */,
+				282CFFDB2CDF1A8D005DE109 /* CrearPostViewController.swift in Sources */,
 				2810CB7F2CC69EC1000EA927 /* LoginViewController.swift in Sources */,
 				2899109E2CC6CB44008BBFDD /* CreateViewController.swift in Sources */,
+				28C7B6542CE5C42B00091880 /* ChatMessageCell.swift in Sources */,
 				284CCB972CC696B100272C2D /* SplashViewController.swift in Sources */,
+				2855D43E2CD9476F0048204A /* User.swift in Sources */,
+				282596292CF4D182008C056F /* PaddedLabel.swift in Sources */,
 				284CCB932CC696B100272C2D /* AppDelegate.swift in Sources */,
 				28A9B9772CD7543C00FD483A /* CrearPerfilViewController.swift in Sources */,
+				288269CF2CE6B6B400576DBE /* ListaChatsViewController.swift in Sources */,
+				282CFFD72CDEF66E005DE109 /* Post.swift in Sources */,
 				284CCB952CC696B100272C2D /* SceneDelegate.swift in Sources */,
+				286F5DE32CF822AC00BF8C51 /* Persona.swift in Sources */,
+				2825FE742CDA7A8B008E9888 /* MainFeedViewController.swift in Sources */,
+				28C7B6522CE5C38900091880 /* ChatViewController.swift in Sources */,
+				288260842CF323B000A790E8 /* MessageCell.swift in Sources */,
+				282CFFD92CDEF808005DE109 /* PostCell.swift in Sources */,
+				286F5DE52CF8484200BF8C51 /* VerificarIdentificacionViewController.swift in Sources */,
+				28C7B6582CE5CB1400091880 /* Chat.swift in Sources */,
+				28C7B6562CE5CAFB00091880 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +520,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		283353352CE3446F00E1C167 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
 		284CCBA82CC69A4B00272C2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -450,6 +549,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		283353362CE3447000E1C167 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 283353352CE3446F00E1C167 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		283353382CE3447000E1C167 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 283353352CE3446F00E1C167 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		284CCBA92CC69A4B00272C2D /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 284CCBA82CC69A4B00272C2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
