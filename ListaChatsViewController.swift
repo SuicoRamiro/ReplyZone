@@ -29,7 +29,7 @@ class ListaChatsViewController: UIViewController, UITableViewDataSource, UITable
                 }
             }
         } else {
-            print("No hay usuario autenticado") // Mensaje cuando no hay usuario autenticado
+            print("No hay usuario autenticado")
         }
         
         tableView.dataSource = self

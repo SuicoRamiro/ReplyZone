@@ -43,7 +43,6 @@
 		28A9B9772CD7543C00FD483A /* CrearPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */; };
 		28A9DDC12CE1B6C600DA22E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A9DDC02CE1B6C600DA22E0 /* GoogleService-Info.plist */; };
 		28C7B6522CE5C38900091880 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6512CE5C38900091880 /* ChatViewController.swift */; };
-		28C7B6542CE5C42B00091880 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6532CE5C42B00091880 /* ChatMessageCell.swift */; };
 		28C7B6562CE5CAFB00091880 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6552CE5CAFB00091880 /* Message.swift */; };
 		28C7B6582CE5CB1400091880 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7B6572CE5CB1400091880 /* Chat.swift */; };
 		28DBCF542CD8AFD500BE943C /* fondoPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DBCF532CD8AFD500BE943C /* fondoPerfil.png */; };
@@ -78,7 +77,6 @@
 		28A9B9762CD7543C00FD483A /* CrearPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearPerfilViewController.swift; sourceTree = "<group>"; };
 		28A9DDC02CE1B6C600DA22E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28C7B6512CE5C38900091880 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = SOURCE_ROOT; };
-		28C7B6532CE5C42B00091880 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatMessageCell.swift; path = ReplyZone/ChatMessageCell.swift; sourceTree = SOURCE_ROOT; };
 		28C7B6552CE5CAFB00091880 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		28C7B6572CE5CB1400091880 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		28DBCF532CD8AFD500BE943C /* fondoPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoPerfil.png; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				288269CE2CE6B6B400576DBE /* ListaChatsViewController.swift */,
-				28C7B6532CE5C42B00091880 /* ChatMessageCell.swift */,
 				28C7B6512CE5C38900091880 /* ChatViewController.swift */,
 				2825FE732CDA7A8B008E9888 /* MainFeedViewController.swift */,
 				2810CB7E2CC69EC1000EA927 /* LoginViewController.swift */,
@@ -281,7 +278,6 @@
 				282CFFDB2CDF1A8D005DE109 /* CrearPostViewController.swift in Sources */,
 				2810CB7F2CC69EC1000EA927 /* LoginViewController.swift in Sources */,
 				2899109E2CC6CB44008BBFDD /* CreateViewController.swift in Sources */,
-				28C7B6542CE5C42B00091880 /* ChatMessageCell.swift in Sources */,
 				284CCB972CC696B100272C2D /* SplashViewController.swift in Sources */,
 				2855D43E2CD9476F0048204A /* User.swift in Sources */,
 				282596292CF4D182008C056F /* PaddedLabel.swift in Sources */,

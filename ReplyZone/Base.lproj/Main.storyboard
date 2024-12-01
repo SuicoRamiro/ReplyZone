@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="4"/>
+            <point key="canvasLocation" x="5113" y="-353"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="5XK-vk-o8E">
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqb-FP-UiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.8604651162791" y="-408.15450643776825"/>
+            <point key="canvasLocation" x="935" y="-393"/>
         </scene>
         <!--CrearPerfilViewController-->
         <scene sceneID="qZd-mI-xGf">
@@ -552,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZS-hR-sD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5139" y="-382"/>
+            <point key="canvasLocation" x="5177" y="1043"/>
         </scene>
         <!--Main Feed View Controller-->
         <scene sceneID="mAM-5o-L3o">
@@ -674,59 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMN-jK-S7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5139" y="321"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nXi-hP-ZuT">
-            <objects>
-                <viewController id="t5F-Bd-PJp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iF0-vU-K8c">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-2s-6Jc">
-                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="atM-YQ-t94">
-                                    <size key="itemSize" width="166" height="141"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iHO-jx-quS">
-                                        <rect key="frame" x="0.0" y="0.0" width="166" height="141"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4BV-eT-nBK">
-                                            <rect key="frame" x="0.0" y="0.0" width="166" height="141"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="166" height="141"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="19x-8w-GkF">
-                                        <rect key="frame" x="264" y="0.0" width="166" height="141"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5aA-uh-p9B">
-                                            <rect key="frame" x="0.0" y="0.0" width="166" height="141"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4Kk-Gm-NBb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="4Kk-Gm-NBb" firstAttribute="bottom" secondItem="XDF-2s-6Jc" secondAttribute="bottom" id="9o2-c4-lT6"/>
-                            <constraint firstItem="4Kk-Gm-NBb" firstAttribute="trailing" secondItem="XDF-2s-6Jc" secondAttribute="trailing" id="E2o-dU-BzL"/>
-                            <constraint firstItem="XDF-2s-6Jc" firstAttribute="top" secondItem="4Kk-Gm-NBb" secondAttribute="top" id="gyl-U3-Bcg"/>
-                            <constraint firstItem="XDF-2s-6Jc" firstAttribute="leading" secondItem="4Kk-Gm-NBb" secondAttribute="leading" id="sdf-50-AxF"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nau-LT-pog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6891.6279069767443" y="457.72532188841205"/>
+            <point key="canvasLocation" x="5178" y="321"/>
         </scene>
         <!--Crear Post View Controller-->
         <scene sceneID="fY0-kl-3m6">
@@ -831,7 +779,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kI-mH-89K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4336.7441860465115" y="1035.8369098712446"/>
+            <point key="canvasLocation" x="4337" y="1043"/>
         </scene>
         <!--CreateViewController-->
         <scene sceneID="AR9-Zw-quc">
@@ -964,7 +912,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="685-tg-W3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.8604651162791" y="320.60085836909872"/>
+            <point key="canvasLocation" x="172" y="321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7da-1P-83s">
@@ -986,9 +934,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0lS-fe-Q4d"/>
+        <segue reference="fYN-eB-g23"/>
         <segue reference="6G8-q0-6To"/>
-        <segue reference="1hg-Qf-EdS"/>
+        <segue reference="jHB-ed-YMe"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoReplyZone.png" width="515" height="421"/>
@@ -1008,9 +956,6 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

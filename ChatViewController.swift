@@ -46,7 +46,6 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func getChatId(senderId: String, receiverId: String) -> String {
-        // El ID del chat puede ser una combinación de los ID de los usuarios
         let ids = [senderId, receiverId].sorted()
         return ids.joined(separator: "_")
     }
@@ -79,7 +78,6 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageCell
         
-        // Verifica si el mensaje fue enviado por el usuario actual
         let isSent = message.senderId == senderId
         cell.configure(message: message, isSent: isSent)
         

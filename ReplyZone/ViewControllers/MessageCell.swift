@@ -30,7 +30,7 @@ class MessageCell: UITableViewCell {
             messageLabel.translatesAutoresizingMaskIntoConstraints = false
             messageLabelConstraints = [
                 messageLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-                messageLabel.leadingAnchor.constraint(greaterThanOrEqualTo: contentView.leadingAnchor, constant: 50), // Ajusta según sea necesario
+                messageLabel.leadingAnchor.constraint(greaterThanOrEqualTo: contentView.leadingAnchor, constant: 50),
                 messageLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
                 messageLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
             ]
@@ -42,7 +42,7 @@ class MessageCell: UITableViewCell {
             messageLabel.translatesAutoresizingMaskIntoConstraints = false
             messageLabelConstraints = [
                 messageLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-                messageLabel.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -50), // Ajusta según sea necesario
+                messageLabel.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -50),
                 messageLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
                 messageLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
  

@@ -201,7 +201,6 @@ class PostCell: UICollectionViewCell {
                 print("Error al borrar el post: \(error.localizedDescription)")
             } else {
                 print("Post borrado exitosamente.")
-                // Aquí no llamamos al delegado para evitar la navegación al chat
             }
         }
     }
